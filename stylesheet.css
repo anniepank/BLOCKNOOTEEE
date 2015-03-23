@@ -1,0 +1,33 @@
+body {
+	padding: 0;
+}
+
+.file-name input {
+	width: 500px;
+	font-size: 25px;
+	padding: 5px;
+}
+
+.file-content textarea {
+	width: 500px;
+	height: 300px;
+	font-size: 25px;
+	padding: 5px;
+}
+
+button {
+	font-size: 20px;
+}
+
+.file-list {
+	float: right;
+}
+
+.file-list-item {
+	display: block;
+}
+
+.container {
+	margin: auto;
+	 width: 800px;
+}
