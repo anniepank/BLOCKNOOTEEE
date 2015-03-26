@@ -1,33 +1,98 @@
 body {
-	padding: 0;
+	padding: 0px;
+	margin: 0;
+	background-color: #FFEBC4;
+	background-image: url('image.png');
+}
+
+.container {
+	margin: 35px auto;
+	width: 1000px;
+	padding: 0px;
+}
+
+.header {
+	margin-bottom: 76px;
+	font-family: "Petit Formal Script";
+	font-size: 60px;
+	text-align: center;
+}
+
+.file-name input, .file-content textarea {
+	width: 500px;
+	font-size: 25px;
+	padding: 15px 8px;
+	box-sizing: border-box;
+	background: none;
+	border: none;
+	line-height: 30px;
+	font-family: Handlee;
+
+}
+
+.file-name input:focus, .file-content textarea:focus {
+	outline: none;
 }
 
 .file-name input {
-	width: 500px;
-	font-size: 25px;
-	padding: 5px;
+	
+
 }
 
 .file-content textarea {
-	width: 500px;
 	height: 300px;
-	font-size: 25px;
-	padding: 5px;
 }
 
 button {
 	font-size: 20px;
+	background-color: #FFAF7B;
+	border-radius: 6px;
+	border: 1px solid #DE8A54;
+	color: white;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#fileSaveButton {
+	display: inline-block;
+	margin-top: 24px;
+	font-size: 41px;
+	color: #555;
+	font-family: Handlee;
+	cursor: pointer;
+}
+
+#fileSaveButton:hover {
+	color: #111;
 }
 
 .file-list {
+	margin-top: 16px;
 	float: right;
+	width: 350px;
+}
+
+.file-list #delete {
+	float: right;
+	color: #aaa;
+	text-decoration: none;
+}
+
+.file-list #delete:hover {
+	color: #222;
 }
 
 .file-list-item {
 	display: block;
+	overflow: hidden;
+	line-height: 30px;
+	font-size: 23px;
+	font-family: Handlee;
 }
 
-.container {
-	margin: auto;
-	 width: 800px;
+.file-list-item .link:hover {
+	color: #777;
+}
+
+.file-list-item .link {
+	cursor: pointer;
 }

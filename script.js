@@ -27,9 +27,11 @@ var init = function () {
 
 	var deleteFile = function(name) {
 		var data = loadFromLocalStorage();
-		delete data[name];
-		saveToLocalStorage(data);
-		refreshList();
+		if (confirm("Are you sure?")) {
+			delete data[name];
+			saveToLocalStorage(data);
+			refreshList();
+		}
 	}
 
 	var loadFromLocalStorage = function () {
